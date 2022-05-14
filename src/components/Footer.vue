@@ -1,18 +1,18 @@
 <template>
   <footer>
     <div class="footer-container">
-      <img src="" alt="Logo" class="zoom" />
+      <img src="../assets/img/logo.jpeg" alt="Logo" class="zoom" />
       <div class="social-media">
-        <a href="">
+        <a href="https://www.facebook.com/Hudshow90/">
           <i class="fab fa-facebook-f"></i
         ></a>
-        <a href="">
-          <i class="fab fa-twitter"></i
+        <a href="https://github.com/Hudsonjr90">
+          <i class="fab fa-github"></i
         ></a>
-        <a href="">
+        <a href="https://www.instagram.com/_hudson.9kj/">
           <i class="fab fa-instagram"></i
         ></a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/hudsonkennedyjr/">
           <i class="fab fa-linkedin-in"></i
         ></a>
       </div>
