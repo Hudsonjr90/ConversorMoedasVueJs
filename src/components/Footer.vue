@@ -3,16 +3,16 @@
     <div class="footer-container">
       <img src="../assets/img/logo.jpeg" alt="Logo" class="zoom" />
       <div class="social-media">
-        <a href="https://www.facebook.com/Hudshow90/">
+        <a href="https://www.facebook.com/Hudshow90/" target="_blank">
           <i class="fab fa-facebook-f"></i
         ></a>
-        <a href="https://github.com/Hudsonjr90">
+        <a href="https://github.com/Hudsonjr90" target="_blank">
           <i class="fab fa-github"></i
         ></a>
-        <a href="https://www.instagram.com/_hudson.9kj/">
+        <a href="https://www.instagram.com/_hudson.9kj/" target="_blank">
           <i class="fab fa-instagram"></i
         ></a>
-        <a href="https://www.linkedin.com/in/hudsonkennedyjr/">
+        <a href="https://www.linkedin.com/in/hudsonkennedyjr/" target="_blank">
           <i class="fab fa-linkedin-in"></i
         ></a>
       </div>
@@ -51,7 +51,7 @@ footer {
 }
 
 .footer-container .social-media a {
-	color: #001a21;
+	color: #000000;
 	margin-right: 25px;
 	font-size: 22px;
 	text-decoration: none;
@@ -59,7 +59,7 @@ footer {
 }
 
 .footer-container .social-media a:hover {
-	color: #f46767;
+	color: #ff0000;
 }
 
 .footer-container p {
