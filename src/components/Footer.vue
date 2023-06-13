@@ -17,7 +17,7 @@
         ></a>
       </div>
       <p class="rights-text">
-        Copyright ©️ 2022 HK™<br />Todos os direitos reservados a Hudson Kennedy
+        Copyright ©️ 2023 HK™<br />Todos os direitos reservados a Hudson Kennedy
       </p>
     </div>
   </footer>
@@ -47,7 +47,7 @@ footer {
 }
 
 .footer-container .social-media {
-	margin: 20px 0;
+	margin: 10px 10px 20px 40px;
 }
 
 .footer-container .social-media a {

@@ -1,53 +1,50 @@
 <template>
-    <div class="conversor" v-on="getCotacao">
-
-        <h2 class="title">{{moedaA}} para {{moedaB}}</h2>
-        <input type="text" class="search-bar" v-model="moedaA_value" :placeholder="moedaA">
-        <button class="button" v-on:click="converter">Converter</button>
-        <h2 class="valor">{{moedaB_value}}</h2>
-        <p v-if="moedaA != 'BRL'">{{moedaA}}: {{cotacao}}</p>
-    </div>
+  <div class="conversor">
+        <div class="col-sm-12 ">
+            <div class="card ">
+                <div class="card-header">
+                    {{nome_moeda1}} / {{nome_moeda2}}
+                </div>
+                <div class="card-body">
+                    <label for="">{{nome_moeda1}}:</label>
+                    <input v-model="value"  type="number" class="form-control">
+                    <label for="">{{nome_moeda2}}:</label>
+                    <input disabled v-bind:value="valor_moeda2"   type="number" class="form-control">
+                    <h1 class="text-center">{{multipliedValue}}</h1>
+                </div>
+            </div>
+        </div>
+  </div>
 </template>
 
 <script>
-    export default {
-        name : "Conversor",
-        props: ["moedaA","moedaB"],
-        data(){
-            return {
-                moedaA_value: "",
-                moedaB_value: 0,
-                cotacao: 0
-            };
-        },
-        beforeMount() {
-            this.getCotacao()
-        },
-        methods:{
-            converter() {
-                let de_para = this.moedaA + "_" + this.moedaB;
-                let url = "http://free.currencyconverterapi.com/api/v5/convert?q=" + de_para + "&compact=y&apiKey=515ce8836bb3907a90fe";
-                fetch(url).then(res => {
-                    return res.json();
-                }).then(json => {
-                    let cotacao = json[de_para].val;
-                    this.moedaB_value = (cotacao * parseFloat(this.moedaA_value)).toFixed(2);
-                })
-            },
-
-            getCotacao() {
-                let de_para = this.moedaA + "_" + this.moedaB;
-                let url = "http://free.currencyconverterapi.com/api/v5/convert?q=" + de_para + "&compact=y&apiKey=515ce8836bb3907a90fe";
-                fetch(url).then(res => {
-                    return res.json();
-                }).then(json => {
-                    if (this.moedaA != 'BRL') {
-                        this.cotacao = parseFloat(json[de_para].val).toFixed(2);
-                    }
-                })
-            }
-        }
-    };
+export default {
+  name: 'Conversor',
+  props: {
+    nome_moeda1:String,
+    nome_moeda2:String,
+    valor_moeda2:Number
+    
+  },
+  data:function(){
+      return{
+          value:1,
+        //   valor_moeda2,
+      }
+  },
+  computed:{
+        multipliedValue () {
+        return (this.value * this.valor_moeda2);
+   }
+  },
+  methods:{
+    //   converte(valor_moeda1 , valor_moeda2){
+    //     //   const convertido = (parseFloat(valor_moeda) * parseFloat(valor_moeda2));
+    //     //   this.valor_moeda.push(convertido);
+          
+    //   },
+  }
+}
 </script>
 
 <style scoped>
@@ -55,7 +52,9 @@
     max-width: 300px;
     padding: 20px;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-    margin: 5px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .conversor .title {

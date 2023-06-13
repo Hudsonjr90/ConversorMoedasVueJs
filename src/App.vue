@@ -1,30 +1,39 @@
 <template>
   <div id="app">
-   <main>
-		<h1>Conversor de Moedas</h1>
-		<div class="box">
-			<Conversor moeda-a="USD" moeda-b="BRL"></Conversor>
-			<Conversor moeda-a="EUR" moeda-b="BRL"></Conversor>
-			<Conversor moeda-a="CAD" moeda-b="BRL"></Conversor>
+    <div class="rows">
 
-			<Conversor moeda-a="BRL" moeda-b="USD"></Conversor>
-			<Conversor moeda-a="BRL" moeda-b="EUR"></Conversor>
-			<Conversor moeda-a="BRL" moeda-b="CAD"></Conversor>
-		</div>
-	</main>
-	<Footer />
+      <Conversor nome_moeda1="Euro" nome_moeda2="Real " valor_moeda1="1" valor_moeda2="5.25"/>
+      
+      <Conversor nome_moeda1="Dolar" nome_moeda2="Real" valor_moeda1="1" valor_moeda2="4.86"/>
+
+      <Conversor nome_moeda1="Euro" nome_moeda2="Dolar" valor_moeda1="1" valor_moeda2="1.08"/>
+    
+    </div>
+    <div class="rows">
+          <Conversor nome_moeda1="Real" nome_moeda2="Euro " valor_moeda1="1" valor_moeda2="0.19"/>
+
+          <Conversor nome_moeda1="Real" nome_moeda2="Dolar" valor_moeda1="1" valor_moeda2="0.21"/>
+
+          <Conversor nome_moeda1="Dolar" nome_moeda2="Euro" valor_moeda1="1" valor_moeda2="0.93"/>
+
+          
+         
+    </div>
+    <Footer />
   </div>
+  
 </template>
 
 <script>
-import Conversor from "./components/Conversor.vue";
-import Footer from './components/Footer.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import Conversor from './components/Conversor.vue'
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
     Conversor,
-	Footer
+    Footer
   }
 }
 </script>
@@ -48,7 +57,7 @@ body{
     -webkit-text-fill-color: transparent;
 }
 
-.box {
+.rows {
   max-width: 1000px;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
