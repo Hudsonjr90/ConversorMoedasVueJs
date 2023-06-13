@@ -1,7 +1,7 @@
 
-![MOEDAS](https://user-images.githubusercontent.com/48127640/97091665-d2195f80-1613-11eb-92ab-21fd00bf8c16.PNG)
+![MOEDAS]()
 
-## Conversor_moedas-vue
+## Conversor_Moedas-VueJs
 
 Projeto de conversor de moedas utilizando o framework Vue JS.
 
