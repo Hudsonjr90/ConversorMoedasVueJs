@@ -1,5 +1,7 @@
 
-![MOEDAS]()
+![MOEDAS]
+
+<p align="center"><img width=100% src="./src/assets/img/conversor.webp"></p>
 
 ## Conversor_Moedas-VueJs
 
