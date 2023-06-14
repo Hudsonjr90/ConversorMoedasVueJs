@@ -32,10 +32,7 @@
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true,
-      "engines": {
-        "node": ">=0.10.3 <14"
-      }
+      "node": true
     },
     "extends": [
       "plugin:vue/essential",
