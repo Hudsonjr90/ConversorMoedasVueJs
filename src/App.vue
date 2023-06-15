@@ -11,7 +11,7 @@
     
     </div>
     <div class="rows">
-          <Conversor nome_moeda1="Real" nome_moeda2="Euro " valor_moeda1="1" valor_moeda2="0.19"/>
+          <Conversor nome_moeda1="Real" nome_moeda2="Euro" valor_moeda1="1" valor_moeda2="0.19"/>
 
           <Conversor nome_moeda1="Real" nome_moeda2="Dolar" valor_moeda1="1" valor_moeda2="0.21"/>
 

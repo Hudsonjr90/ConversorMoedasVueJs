@@ -7,9 +7,9 @@
                 </div>
                 <div class="card-body">
                     <label for="">{{nome_moeda1}}:</label>
-                    <input v-model="value"  type="number" class="form-control">
+                    <input v-model="value" type="number" class="form-control">
                     <label for="">{{nome_moeda2}}:</label>
-                    <input disabled v-bind:value="valor_moeda2"   type="number" class="form-control">
+                    <input disabled v-bind:value="valor_moeda2" type="string" class="form-control">
                     <h1 class="text-center">{{multipliedValue}}</h1>
                 </div>
             </div>
