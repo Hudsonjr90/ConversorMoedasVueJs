@@ -65,6 +65,7 @@ body{
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 6em;
+  margin-left: 45px;
 }
 
 .rows {
@@ -79,7 +80,7 @@ body{
   flex-wrap: wrap;
 }
 ::-webkit-scrollbar{
-  width: 20px ;
+  width: 15px ;
  
 } 
 ::-webkit-scrollbar-thumb {

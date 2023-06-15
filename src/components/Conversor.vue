@@ -10,7 +10,7 @@
                     <input v-model="value" type="number" class="form-control">
                     <label for="">{{nome_moeda2}}:</label>
                     <input disabled v-bind:value="valor_moeda2" type="string" class="form-control">
-                    <h1 class="text-center">{{multipliedValue}}</h1>
+                    <h1 class="text-center" >{{multipliedValue.toFixed(2)}}</h1>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@ export default {
   props: {
     nome_moeda1:String,
     nome_moeda2:String,
-    valor_moeda2:Number
+    valor_moeda2:String
     
   },
   data:function(){
