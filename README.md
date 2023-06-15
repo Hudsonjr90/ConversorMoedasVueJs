@@ -1,10 +1,9 @@
-## Conversor_Moedas-VueJs
+## Conversor Moedas Vue
 
 <p align="center"><img width=100% src="./src/assets/img/conversor.webp"></p>
 
 
-
-# Projeto de conversor de moedas utilizando o framework Vue JS.
+# Projeto de conversor de moedas, utilizando o framework Vue com Typescript.
 
 ### Social
 * [Whatsapp](https://api.whatsapp.com/send?phone=5521969609121)
