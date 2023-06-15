@@ -48,16 +48,16 @@ export default {
 </script>
 
 <style scoped>
-.conversor{
+.conversor .card {
     max-width: 300px;
     padding: 20px;
-    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 8px 0px rgba(214, 26, 26, 0.884);
     margin-left: 40px;
     display: flex;
     justify-content: center;
 }
 
-.conversor .title {
+.card-header {
     color: #313131;
 }
 
@@ -67,48 +67,5 @@ export default {
     -webkit-text-fill-color: transparent;
 }
 
-.conversor .search-bar {
-  padding: 5px 10px 5px 0px;
-  color: #313131;
-  font-size: 15px;
-  appearance: none;
-  border:none;
-  outline: none;
-  background: none;
-  background-color: rgba(255, 255, 255, 0.5);
-  transition: 0.4s;
-  border-bottom: 1px solid black
-}
-
-.conversor .search-bar:focus {
-    background-color: rgba(255, 255, 255, 0.75);
-}
-
-.conversor .button {
-    appearance: none;
-    border:none;
-    outline: none;
-    background: none;
-    cursor: pointer;
-
-    margin-left: 5px;
-
-    border: 1px solid black;
-
-    padding: 5px 7px;
-
-    transition: 0.3s;
-}
-
-.conversor .button:hover {
-    border: 1px solid orangered;
-}
-
-.conversor p {
-    margin: 0;
-    padding: 0;
-    text-align: start;
-    font-weight: bold;
-}
 
 </style>
