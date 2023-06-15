@@ -50,7 +50,12 @@ body{
     padding: 0;
 }
 
-
+#app h1 {
+  text-align: center;
+      background: linear-gradient(to top right,#ff2a00 0,#ffb600 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .rows {
   max-width: 1000px;
