@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+   <h1 class="title-name">Conversor de Moedas</h1>
     <div class="rows">
 
       <Conversor nome_moeda1="Euro" nome_moeda2="Real " valor_moeda1="1" valor_moeda2="5.25"/>
@@ -14,10 +15,7 @@
 
           <Conversor nome_moeda1="Real" nome_moeda2="Dolar" valor_moeda1="1" valor_moeda2="0.21"/>
 
-          <Conversor nome_moeda1="Dolar" nome_moeda2="Euro" valor_moeda1="1" valor_moeda2="0.93"/>
-
-          
-         
+          <Conversor nome_moeda1="Dolar" nome_moeda2="Euro" valor_moeda1="1" valor_moeda2="0.93"/>    
     </div>
     <Footer />
   </div>
@@ -50,11 +48,23 @@ body{
     padding: 0;
 }
 
-#app h1 {
+ h1 {
+  display: flex;
+  justify-content: center;
   text-align: center;
-      background: linear-gradient(to top right,#ff2a00 0,#ffb600 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to top right,#ff2a00 0,#ffb600 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-name{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to top right,#ff2a00 0,#ffb600 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6em;
 }
 
 .rows {
@@ -68,4 +78,17 @@ body{
   display: flex;
   flex-wrap: wrap;
 }
+::-webkit-scrollbar{
+  width: 20px ;
+ 
+} 
+::-webkit-scrollbar-thumb {
+ background: linear-gradient(to top right,#ff2a00 0,#ffb600 100%);
+ border-radius: 10px
+} 
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+
 </style>
