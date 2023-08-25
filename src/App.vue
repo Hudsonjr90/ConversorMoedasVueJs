@@ -91,5 +91,19 @@ body{
   background: #f1f1f1; 
 }
 
+@media (max-width: 768px) {
+  .title-name {
+    font-size: 4em;
+    margin-left: 0;
+  }
+  
+  .rows {
+    margin: 20px;
+  }
+  body {
+    padding: 50px;
+  }
+}
+
 
 </style>
